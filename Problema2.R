@@ -20,7 +20,7 @@ ypredict <- predict(mod, data.frame(x=x)) #fer la prediccio de la regressio line
 plot(x,y, pch=16, col='lightblue')
 lines(x,ypredict) #linea de regressio lineal
 
-Rsqr <- sum((ypredict-ybar)^2)/sum((y-ybar)^2) # R=coeficient de correlacio
+Rsqr <- sum((ypredict-ybar)^2)/sum((y-ybar)^2) # R=coeficient de correlacio o coeficient de determinacio
 
 summary(mod) #mes informacio sobre mod (Multiple R-squared:   0.76)
 
